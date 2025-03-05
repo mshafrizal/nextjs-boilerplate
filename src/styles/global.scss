@@ -1,0 +1,51 @@
+:root {
+    // Color
+    --black: #202124;
+    --white: #FFFFFF;
+    --main-color: #E4002B;
+
+    // Background
+    --bg-base: #F2F4F7;
+    --bg-sec-base: #D0D5DD;
+
+    // Border
+    --border-base: #ABAFB5;
+
+    // Typography
+    --font-family-primary: 'SF-Pro-Text-Regular', sans-serif;
+    --font-family-secondary: 'National2Condensed-Bold', serif;
+    --font-size-base: 14px;
+    --font-size-heading: 20px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+    --cfont-base: #101828;
+    --cfont-grey: #CDD0D4;
+    --cfont-light-grey: #667085;
+}
+
+// Global Styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: "SF-Pro-Text-Regular";
+    src: url(../../public//assets//fonts/SF-Pro-Text-Regular.otf), format("opentype");
+}
+@font-face {
+    font-family: "National2Condensed-Bold";
+    src: url(../../public//assets//fonts/National2Condensed-Bold.otf) format("opentype");
+}
+body,
+html {
+    padding: 0 !important;
+    margin: 0;
+    background-color: var(--bg-base) !important;
+    font-family: var(--font-family-primary);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}

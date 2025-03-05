@@ -1,0 +1,35 @@
+{
+   "Tnc": {
+      "Layanan Online (Umum)": "Layanan Online (Umum)",
+      "Privacy Policy": "Kebijakan Privasi",
+      "Pesan Antar": "Pesan Antar",
+      "Bayar dan Ambil": "Bayar dan Ambil",
+      "Drive Thru": "Drive Thru",
+      "Layanan Antar Ke Meja": "Layanan Antar Ke Meja",
+      "Topics": "Topik",
+      "Program Loyalitas dan Keanggotaan": "Program Loyalitas dan Keanggotaan",
+      "Promosi and Hadiah": "Promosi and Hadiah",
+      "Pre-Booking Catering": "Pre-Booking Catering",
+      "Pre-Booking Pesta Ulang Tahun": "Pre-Booking Pesta Ulang Tahun",
+      "Chaki Kids Club": "Chaki Kids Club",
+      "Terms & Conditions": "Syarat & Ketentuan"
+   },
+   "Privacy": {
+      "path": "https://api-core.kfcku.co.id/v1/common/public/privacy-policy"
+   },
+   "Hmd": {
+      "path": "/locales/id-hmd.html"
+   },
+   "Apps": {
+      "path": "/locales/id-apps.html"
+   },
+   "PayNPick": {
+      "path": "/locales/id-paynpick.html"
+   },
+   "DriveThru": {
+      "path": "/locales/id-drivethru.html"
+   },
+   "Table": {
+      "path": "/locales/id-table.html"
+   }
+}

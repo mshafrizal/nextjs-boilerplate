@@ -1,0 +1,90 @@
+@use '../global.scss';
+
+.header-container {
+    grid-area: header;
+    width: 100vw;
+    .custom-header { 
+        box-shadow: none !important;
+        position: sticky !important;
+        display: grid;
+        padding: 0 !important;
+    
+        .header-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--black) !important;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+    
+            .logo {
+                width: 122px;
+                height: 31px;
+            }
+    
+            .language-selector {
+                width: 75px;
+                height: 40px;
+                justify-self: end;
+                color: var(--white);
+                border: 1px solid var(--border-base);
+                border-radius: 100px;
+    
+                .MuiInputBase-input {
+                    font-size:var(--font-size-base);
+                }
+    
+                .MuiSelect-icon {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    
+    .tnc {
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        height: 134px;
+        background: var(--white);
+        
+        @media (max-width: 1024px) {
+            padding: 24px;
+            height: unset;
+            font-size: 32px;
+        }
+    
+        .title {
+            color: var(--cfont-base);
+            font-weight: 600;
+            font-family: var(--font-family-secondary);
+            text-transform: uppercase;
+            
+            @media (max-width: 1024px) {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+
+    .header-container {
+        .custom-header {
+            .header-content {
+                padding: 0 184px;
+            }
+        }
+    
+        .tnc {
+            padding: 0 184px;
+    
+            .title {
+                font-size: 45px;
+            }
+        }
+    }
+    
+}

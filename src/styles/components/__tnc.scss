@@ -1,0 +1,197 @@
+@use '../global.scss';
+
+.tnc-container {
+    grid-area: main;
+    padding: 40px 184px;
+
+    @media (max-width: 1024px) {
+      padding: 16px;
+    }
+
+    .tnc-card {
+        height: 1024px;
+        border-radius: 12px;
+        box-shadow: 0px 16px 32px 0px #1018280F !important;
+
+        @media (max-width: 1024px) {
+          height: unset;
+        }
+
+        .tnc-content {
+            padding: 24px;
+            height: 100%;
+
+            @media (max-width: 1180px) {
+                min-height: 600px;
+            }
+
+            .topic-title {
+                font-size: 36px;
+                font-weight: var(--font-weight-bold);
+                font-family: var(--font-family-secondary);
+                text-transform: uppercase;
+            }
+
+            .tnc-main-content {
+                display: grid;
+                grid-template-columns: 300px 2fr;
+                height: 75%;
+
+                @media (max-width: 1180px) {
+                  display: flex;
+                  flex-direction: column;
+                  height: unset;
+                }
+
+                .tnc-list {
+                    width: unset;
+                    @media (max-width: 1024px) {
+                      width: 100%;
+                    }
+                    .list-button {
+                        padding: 20px 0px;
+    
+                        .list-text {
+                            color: var(--cfont-base);
+                        }
+    
+                        .list-icon {
+                            display: grid;
+                            align-items: center;
+                            justify-content: end;
+                        }
+                    }
+                }
+
+                .details-tnc {
+                    overflow: auto;
+                    height: 100%;
+                    padding: 24px !important;
+
+                    @media (max-width: 1024px) {
+                      height: unset;
+                      padding: 0 !important
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 8px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: var(--bg-sec-base) !important;
+                        border-radius: 8px;
+                    }
+
+                    &::-webkit-scrollbar-thumb:hover {
+                        background-color: #555;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background-color: var(--bg-base);
+                        border-radius: 8px;
+                    }
+
+                    .tnc-value {
+                        padding: 0 100px 0 0;
+                        color: var(--cfont-light-grey);
+                        line-height: 24px;
+
+                        @media (max-width: 1180px) {
+                            padding: 0;
+                            min-height: 600px;
+                        }
+
+                        h1 {
+                            text-transform: uppercase;
+                            color: var(--cfont-base);
+                            font-size: 24px;
+                            margin: 24px 0;
+                        }
+
+                        h2 {
+                            text-transform: uppercase;
+                            font-size: 18.5px;
+                            color: var(--cfont-base);
+                            font-style: italic;
+                            margin-bottom: 24px;
+                        }
+
+                        h5 {
+                            font-size: 18px;
+                            color: var(--cfont-base);
+                            font-style: italic;
+                            margin: 10px 0;
+                        }
+
+                        h6 {
+                            color: var(--cfont-base);
+                            font-size: 16px;
+                            font-weight: 500;  
+                        }
+                        
+                        span {
+                            font-size: 16px;
+                            margin-bottom: 24px;
+                        }
+
+                        p {
+                            margin-bottom: 16px;
+                            text-align: justify;
+                        }
+
+                        ol {
+                            margin-left: 24px;
+
+                            li {
+                                margin-bottom: 16px;
+                                text-align: justify;
+                            }
+                        }
+
+                        ul {
+                            margin-left: 18px;
+
+                            li {
+                                margin-bottom: 10px;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+                
+                .Mui-selected {
+                    background: transparent;
+
+                    .list-text {
+                        color: var(--main-color) !important;
+                        
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .list-icon {
+                        color: var(--main-color);
+                    }
+                }
+
+                .details-tnc {
+                    padding: 24px;
+                }
+            }
+        }
+    }
+}
+
+.tnc-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 100%;
+  height: 100%;
+  
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
