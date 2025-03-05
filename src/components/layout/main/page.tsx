@@ -58,9 +58,9 @@ export default function MainPage({ children }: { children: React.ReactNode }) {
                             <List component="nav">
                                 {tncList.map((item) => (
                                     <Box key={item.id}>
-                                        <Link href={item.path ?? "#"}>
                                         <ListItemButton className="list-button"
                                             selected={selectedItem?.id === item.id}
+                                            onClick={(item) => handleListItemClick(item)}
                                             disabled={!Boolean(item?.path)}
                                         >
                                                 <ListItemText className="list-text" primary={t(item.title)} />
@@ -75,7 +75,6 @@ export default function MainPage({ children }: { children: React.ReactNode }) {
                                                 border: selectedItem?.id === item.id ? '1px solid #E4002B' : '1px solid #D0D5DD',
                                             }}
                                             />
-                                            </Link>
                                     </Box>
                                 ))}
                             </List>
