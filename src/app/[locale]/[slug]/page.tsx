@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
     Box,
     Card,
@@ -21,15 +20,25 @@ export interface TncSidebar {
     topic_en: string;
     sort_order: number;
 }
-export default async function Page() {
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ slug: string; locale: string }>;
+}) {
+    const p = await params;
     const l = await getLocale();
-    const getMenus = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/cms/tnc-contents-sidebar`,
+    const getContent = await fetch(
+        `http://localhost:8080/api/v1/cms/tnc-contents/${p.slug}`,
     );
-    const res = await getMenus.json();
-    const menus = res.data as TncSidebar[];
+    const resContent = await getContent.json();
+    const content = resContent.data;
+    const getMenus = await fetch(
+        "http://localhost:8080/api/v1/cms/tnc-contents-sidebar",
+    );
+    const resMenus = await getMenus.json();
+    const menus = resMenus.data as TncSidebar[];
     return (
-        <Container className={"tnc-container"} maxWidth={"xl"}>
+        <Container className={"tnc-container detail"} maxWidth={"xl"}>
             <Card className={"tnc-card"}>
                 <div className="tnc-content">
                     <div className="topic-title">Topics</div>
@@ -48,8 +57,7 @@ export default async function Page() {
                                         <Link href={`/${l}/${item.slug}`}>
                                             <ListItemButton
                                                 className="list-button"
-                                                // selected={selectedItem?.id === item.id}
-                                                // disabled={!Boolean(item?.path)}
+                                                selected={p?.slug === item.slug}
                                             >
                                                 <ListItemText className="list-text">
                                                     {l === "id-id"
@@ -62,16 +70,16 @@ export default async function Page() {
                                             </ListItemButton>
 
                                             <Divider
-                                            // sx={{
-                                            //   backgroundColor:
-                                            //     selectedItem?.id === item.id
-                                            //       ? "#E4002B"
-                                            //       : "#D0D5DD",
-                                            //   border:
-                                            //     selectedItem?.id === item.id
-                                            //       ? "1px solid #E4002B"
-                                            //       : "1px solid #D0D5DD",
-                                            // }}
+                                                sx={{
+                                                    backgroundColor:
+                                                        p.slug === item.slug
+                                                            ? "#E4002B"
+                                                            : "#D0D5DD",
+                                                    border:
+                                                        p.slug === item.slug
+                                                            ? "1px solid #E4002B"
+                                                            : "1px solid #D0D5DD",
+                                                }}
                                             />
                                         </Link>
                                     </Box>
@@ -80,19 +88,15 @@ export default async function Page() {
                         </div>
 
                         <Box className={"details-tnc"}>
-                            <div className="tnc-hint">
-                                <Image
-                                    src={"/assets/icon/info-circle.svg"}
-                                    width={24}
-                                    height={24}
-                                    alt="info icon"
-                                    className="tnc-hint-icon"
-                                />
-                                <p className="tnc-hint-text">
-                                    Pilih menu di samping untuk menampilkan
-                                    syarat dan ketentuan{" "}
-                                </p>
-                            </div>
+                            <div
+                                className={"tnc-value"}
+                                dangerouslySetInnerHTML={{
+                                    __html:
+                                        l === "id-id"
+                                            ? content.content_id
+                                            : content.content_en,
+                                }}
+                            ></div>
                         </Box>
                     </div>
                 </div>
