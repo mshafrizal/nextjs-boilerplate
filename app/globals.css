@@ -1,0 +1,299 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-brand-01: #d4a254;
+    --color-brand-02: #ebd5b2;
+    --color-yellow-00: #fff6e5;
+    --color-yellow-100: #eab308;
+    --color-yellow-150: #a16207;
+    --color-yellow-200: #351e15;
+    --color-yellow-300: #271717;
+    --color-yellow-500: #713f12;
+    --color-neutral-00: #ffffff;
+    --color-neutral-100: #f9fafb;
+    --color-neutral-200: #e5e7eb;
+    --color-neutral-300: #9ca3af;
+    --color-neutral-400: #6b7280;
+    --color-neutral-500: #374151;
+    --color-neutral-600: #111827;
+    --color-danger-00: #f8e9ec;
+    --color-danger-100: #fa9faa;
+    --color-danger-200: #e91639;
+    --color-success-500: #1b8c17;
+}
+
+:root {
+    --radius: 0.625rem;
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-neutral-100 text-neutral-600 text-base leading-[24px];
+    }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-neutral-200) var(--color-neutral-100);
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-neutral-100);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-neutral-100);
+    border: 3px solid var(--color-neutral-200);
+}
+
+.h1 {
+    @apply text-[28px] font-semibold text-neutral-600;
+}
+
+.h2 {
+    @apply text-xl font-semibold text-neutral-600;
+}
+
+.input:focus ~ .label > .required-asterisk,
+.textarea:focus ~ .label > .required-asterisk,
+.input:not(:placeholder-shown) ~ label > .required-asterisk {
+    @apply text-brand-01;
+}
+
+.input ~ .label > .required-asterisk,
+.textarea ~ .label > .required-asterisk {
+    @apply text-red-500;
+}
+
+.setting-content h1,
+.setting-content h2,
+.setting-content h3,
+.setting-content h4,
+.setting-content h5,
+.setting-content h6 {
+    @apply font-bold text-neutral-600 mb-1;
+}
+
+.setting-content p {
+    @apply my-4;
+}
+
+.setting-content p,
+.setting-content ul li,
+.setting-content ol li {
+    @apply text-neutral-600 mb-1;
+}
+
+.setting-content ul {
+    @apply list-disc pl-5;
+}
+
+.setting-content ol {
+    @apply list-decimal pl-5;
+}
+
+.setting-content ul li {
+    @apply my-4;
+}
+
+.setting-content ul li ul li {
+    @apply my-0;
+}
+
+.setting-content a {
+    @apply text-[#0000ee] underline cursor-pointer;
+}
+
+.setting-content table,
+.setting-content td {
+    @apply border;
+}
+
+.setting-content table td {
+    @apply p-1;
+}
+
+#home-hero {
+    background-image: url('general.webp');
+}
+
+.rdp-root.rate-calendar {
+    --rdp-accent-color: var(--color-brand-01);
+    --rdp-accent-background-color: var(--color-brand-01);
+    --rdp-today-color: var(--color-neutral-600);
+    --rdp-day_button-border-radius: 0;
+    --rdp-day_button-border: none;
+    --rdp-day_button-width: 100%;
+    --rdp-range_start-background: var(--color-brand-01);
+    --rdp-range_end-background: var(--color-brand-01);
+    --rdp-range_start-date-background-color: var(--color-brand-01);
+    --rdp-range_end-date-background-color: var(--color-brand-01);
+    --rdp-range_middle-color: var(--color-white);
+    --rdp-day-height: 86px;
+    --rdp-day-width: 80px;
+    --rdp-selected-border: 1px;
+    --rdp-weekday-text-transform: uppercase;
+    --rdp-disabled-opacity: 1;
+}
+
+.rdp-root .rdp-chevron {
+    fill: var(--color-white);
+    stroke: var(--color-neutral-300);
+}
+
+.rdp-root .rdp-month_grid {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.rdp-root.rate-calendar .rdp-day_button {
+    height: 100%;
+    border-radius: unset;
+    padding: 1px;
+}
+
+.rdp-root.rate-calendar .rdp-day:not(.rdp-selected) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-neutral-100);
+}
+
+.rdp-root.rate-calendar .rdp-selected {
+    border-width: 1px;
+    border-color: var(--color-brand-01);
+}
+
+.rdp-root.rate-calendar .rdp-today:not(.rdp-outside) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-brand-01);
+}
+
+.rdp-root.rate-calendar .rdp-today:not(.rdp-outside).rdp-disabled {
+    color: var(--color-neutral-300);
+}
+
+.rdp-root.rate-calendar .rdp-weekday {
+    font-size: 1rem;
+}
+
+.rdp-root .rdp-selected {
+    font-weight: normal !important;
+}
+
+.rdp-root.rate-calendar .rdp-day.rdp-disabled {
+    background-color: var(--color-neutral-200);
+    border: 1px solid var(--color-neutral-200);
+    cursor: not-allowed;
+}

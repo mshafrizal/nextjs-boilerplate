@@ -1,0 +1,355 @@
+{
+    "Home": {
+        "title": "حجز ويب بادما",
+        "description": "احجز غرف فندق بادما بسهولة",
+        "signUp": "إنشاء حساب",
+        "login": "تسجيل الدخول",
+        "myBooking": "حجوزاتي",
+        "myBookingDesc": "يمكنك عرض الحجز أو تعديله أو إلغائه.\nيرجى كتابة عنوان البريد الإلكتروني الذي استخدمته أثناء الحجز ورقم التأكيد الذي تلقيته منا:",
+        "award": "جائزة",
+        "whyUs": "لماذا تحجز مباشرة معنا؟",
+        "whyUs1": "السعر المعلن يشمل الضريبة ورسوم الخدمة والإفطار اليومي",
+        "whyUs2": "لا توجد رسوم حجز",
+        "whyUs3": "الإيداع يساوي سعر الليلة الأولى",
+        "whyUs4": "مرونة إلغاء الحجز قبل 7 أيام من تاريخ الوصول دون أي غرامة",
+        "whyUs5": "مرافق مجانية: خدمة الواي فاي في جميع أنحاء المنتجع، صالة الألعاب الرياضية، نادي الأطفال ومنطقة وقوف السيارات.",
+        "whyUsNote": "قد لا تنطبق مرونة الإلغاء لمدة 7 أيام على عروض غرف معينة مثل عرض الحجز المسبق (سعر الشراء المسبق)",
+        "contact": "اتصل بنا",
+        "contactPadma": "اتصل بمنتجع بادما ليجيان",
+        "address": "العنوان: شارع بادما رقم 1، ليجيان - بالي 80361. إندونيسيا",
+        "phone": "الهاتف: +62 316 752 111",
+        "email": "البريد الإلكتروني: reservation.legian@padmahotels.com",
+        "website": "الموقع الإلكتروني: www.padmaresortlegian.com",
+        "stayDate": "تاريخ الإقامة",
+        "nights": "ليلة",
+        "roomGuest": "الغرفة والضيوف",
+        "hotel": "الفندق",
+        "hotelPlaceholder": "الرجاء اختيار الفندق",
+        "today": "اليوم",
+        "selected": "محدد",
+        "rateCalendarHint": "الرجاء اختيار الفندق، إذا كنت ترغب في رؤية أفضل سعر",
+        "select": "اختر",
+        "cancel": "إلغاء",
+        "retrieveBooking": "استرجاع الحجز",
+        "bookingConfirmationNumber": "رقم تأكيد الحجز",
+        "emailAddress": "عنوان البريد الإلكتروني",
+        "verificationExpired": "انتهت صلاحية التحقق",
+        "verificationExpiredDesc": "رسالة التحقق صالحة لمدة ساعة واحدة فقط.",
+        "close": "إغلاق",
+        "rooms": "الغرف",
+        "roomsDesc": "مرافق الغرفة",
+        "adults": "البالغين",
+        "adultsDesc": "13 سنة أو أكثر",
+        "children": "الأطفال",
+        "childrenDesc": "الأعمار 6 - 12",
+        "infants": "الرضع",
+        "infantsDesc": "تحت 0 - 5",
+        "save": "حفظ",
+        "voucherDialogTitle": "Voucher",
+        "voucherDialogDesc": "If you have a voucher code available, you can enter it below to unlock special rates.",
+        "inputVoucherCode": "Input voucher code",
+        "applyVoucher": "Apply Voucher",
+        "availabilitySearch": "Availability Search",
+        "haveACode": "Have a code?",
+        "enterYourCode": "Enter your code & enjoy special offers for you.",
+        "chooseCode": "Choose code type",
+        "bookingCode": "Booking Code",
+        "voucherCode": "Voucher Code",
+        "inputCode": "Input code",
+        "search": "Search",
+        "yourNextHoliday": "YOUR NEXT HOLIDAY",
+        "seeDetails": "See details",
+        "soldOut": "Sold Out"
+    },
+    "Auth": {
+        "SignIn": {
+            "title": "تسجيل الدخول إلى حسابك",
+            "emailAddress": "عنوان البريد الإلكتروني",
+            "password": "كلمة المرور",
+            "login": "تسجيل الدخول",
+            "forgot": "هل نسيت كلمة المرور؟",
+            "havingTrouble": "تواجه مشكلة في تسجيل الدخول؟",
+            "contactUs": "اتصل بنا",
+            "noAccount": "ليس لديك حساب؟",
+            "signUp": "إنشاء حساب"
+        },
+        "SignUp": {
+            "title": "إنشاء حساب بادما",
+            "description": "أكمل البيانات أدناه لإنشاء حساب",
+            "account": "الحساب",
+            "personal": "شخصي",
+            "address": "العنوان",
+            "email": "البريد الإلكتروني",
+            "code": "الرمز",
+            "phone": "رقم الهاتف",
+            "8-20characters": "8-20 حرف",
+            "passwordCombination": "يجب أن تتضمن كلمة المرور أحرف كبيرة، أحرف صغيرة، أرقام، وأحرف خاصة.",
+            "makeSure": "تأكد من أن بريدك الإلكتروني نشط لأننا سنرسل رابط التحقق.",
+            "nextStep": "الخطوة التالية",
+            "alreadyHaveAccount": "لديك حساب بالفعل؟ تسجيل الدخول",
+            "validation": {
+                "required": "{name} مطلوب",
+                "email": "تنسيق البريد الإلكتروني غير صحيح.",
+                "password": "كلمة المرور لا تلبي المواصفات.",
+                "phone": "يرجى إدخال رقم هاتف صالح",
+                "emailExists": "هذا البريد الإلكتروني مسجل بالفعل",
+                "phoneLen": "رقم الهاتف بحد أقصى 20 رقم.",
+                "firstNameLen": "الاسم الأول بحد أقصى 50 حرف",
+                "lastNameLen": "اسم العائلة بحد أقصى 50 حرف"
+            },
+            "previous": "السابق",
+            "consent": "أفهم وأوافق على <terms>الشروط والأحكام</terms> و <privacy>سياسة الخصوصية</privacy>",
+            "verifyEmailSent": "تم إرسال بريد التحقق",
+            "verifyEmailSentDesc": "تحقق من بريدك الإلكتروني للتحقق من حسابك.",
+            "close": "إغلاق",
+            "signUp": "إنشاء حساب"
+        }
+    },
+    "AccountVerified": {
+        "title": "تم التحقق من الحساب",
+        "desc": "تم التحقق من البريد الإلكتروني بنجاح، يرجى تسجيل الدخول لاستكشاف فنادق بادما.",
+        "action": "الذهاب إلى الصفحة الرئيسية لفنادق بادما",
+        "action2": "Continue Booking"
+    },
+    "Search": {
+        "noRoomsTitle": "لا يوجد توفر للتواريخ المحددة",
+        "noRoomsDesc": "للأسف، لا توجد غرف متاحة للتواريخ التي اخترتها. يرجى تجربة تواريخ مختلفة أو استكشاف فنادق بادما الأخرى."
+    },
+    "Error": {
+        "description": "<p>للأسف واجهنا خطأ.</p><p>يمكنك محاولة <retry>إعادة تحميل الصفحة</retry> التي كنت تزورها.</p>",
+        "title": "حدث خطأ ما!"
+    },
+    "Reservation": {
+        "title": "ملخص الحجز",
+        "desc": "تأكد من صحة جميع التفاصيل في هذه الصفحة قبل المتابعة إلى الدفع.",
+        "loginCTA": "احصل على عروض حصرية ومزايا أكثر عن طريق تسجيل الدخول.",
+        "loginOrSignUp": "تسجيل الدخول أو إنشاء حساب",
+        "guestDetails": "تفاصيل الضيف",
+        "adult": "بالغ",
+        "child": "طفل",
+        "infant": "رضيع",
+        "selectCountry": "اختر الدولة",
+        "firstName": "الاسم الأول",
+        "lastName": "اسم العائلة",
+        "firstLastName": "الاسم الأول واسم العائلة",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "phoneNumber": "رقم الهاتف",
+        "personalInformation": "المعلومات الشخصية",
+        "address": "العنوان",
+        "country": "الدولة",
+        "province": "المحافظة",
+        "city": "المدينة",
+        "cityLocation": "المدينة/الموقع",
+        "stateRegion": "الولاية/المنطقة",
+        "postalCode": "الرمز البريدي",
+        "postalCodeZip": "الرمز البريدي (ZIP)",
+        "specialRequest": "طلب خاص",
+        "specialRequestPlaceholder": "يرجى كتابة طلبك الخاص هنا",
+        "specialRequestHint": "الطلبات الخاصة تعتمد على التوفر وقد تتطلب رسوماً إضافية.",
+        "specialRequestRemarks": "طلب خاص/ملاحظات",
+        "specialRequestRemarksHint": "* الطلبات غير مضمونة وتخضع للتوفر.",
+        "extras": "إضافات",
+        "paymentMethod": "طريقة الدفع",
+        "virtualAccount": "حساب افتراضي",
+        "creditDebitCard": "بطاقة ائتمان/خصم",
+        "fillPreferences": "يرجى ملء واختيار تفضيلاتك",
+        "selectPreferences": "حدد تفضيلاتك وساعدنا على خدمتك بشكل أفضل",
+        "padmaResidentNumber": "رقم عضوية بادما ريزيدنت (اختياري)",
+        "notMemberYet": "لست عضواً بعد؟",
+        "notMemberYetDesc": "بالتحقق من هذا المربع، أؤكد تسجيلي في برنامج بادما ريزيدنت وأوافق على <terms>الشروط والأحكام</terms>",
+        "firstStay": "هل هذه هي المرة الأولى التي تقيم فيها معنا؟",
+        "firstVisit": "هذه هي زيارتنا الأولى",
+        "returningGuest": "نحن ضيوف عائدون",
+        "smokingNonSmoking": "التدخين/عدم التدخين",
+        "nonSmoking": "غرفة لغير المدخنين",
+        "smoking": "غرفة للمدخنين",
+        "checkIn": "تسجيل الوصول:",
+        "checkOut": "تسجيل المغادرة:",
+        "nights": "ليلة",
+        "from": "من",
+        "before": "قبل",
+        "rate": "السعر:",
+        "guests": "الضيوف",
+        "adults": "البالغين",
+        "childs": "الأطفال",
+        "infants": "الرضع",
+        "paymentDetail": "تفاصيل الدفع",
+        "paymentTotal": "إجمالي الدفع",
+        "stayTotal": "إجمالي الإقامة:",
+        "taxes": "الضرائب:",
+        "bookingTotal": "إجمالي الحجز",
+        "bookingAgreement": "بإكمال هذا الحجز، فإنك توافق على <terms>شروط الحجز</terms> و <privacy>سياسة الخصوصية</privacy>",
+        "confirmBook": "تأكيد وحجز",
+        "notes": "ملاحظات",
+        "cantBeEmpty": "لا يمكن أن يكون فارغاً",
+        "roomNoLongerAvailable": "الغرفة لم تعد متاحة",
+        "roomNoLongerAvailableDesc": "نأسف، الغرفة التي اخترتها تم حجزها للتو من قبل ضيف آخر. يرجى بدء بحث جديد لعرض أحدث التوفر.",
+        "goToRoomList": "الذهاب إلى قائمة الغرف",
+        "loginSuccessful": "تم تسجيل الدخول بنجاح",
+        "loginSuccessfulDesc": "أنت الآن مسجل الدخول. استمتع بأسعار خاصة مخفضة متاحة حصرياً للمستخدمين المسجلين.",
+        "close": "إغلاق",
+        "yourCurrency": "عملتك:",
+        "propertyCurrency": "عملة العقار:",
+        "purposeOfStay": "الغرض من الإقامة",
+        "company": "الشركة",
+        "cancellationModification": "الإلغاء والتعديل",
+        "freeCancellation": "إلغاء مجاني",
+        "freeCancellationDesc": "إلغاء مجاني حتى 10 أيام بعد الحجز.",
+        "redeemPoints": "استبدال النقاط",
+        "redeemAllPoints": "استبدال جميع النقاط",
+        "inputYourPadmaPIN": "أدخل رمز بادما السري",
+        "inputYourPadmaPINDesc": "يستخدم الرمز السري لحماية المعاملات على حسابك.",
+        "enterYourPIN": "أدخل الرمز السري",
+        "forgotPIN": "نسيت الرمز السري؟"
+    },
+    "Profile": {
+        "title": "Profile Info",
+        "preferredMember": "Preferred Member",
+        "seeDetails": "See details",
+        "loyaltyPoint": "Loyalty Point",
+        "accountInfo": "Account Info",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "personalInfo": "Personal Info",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "dob": "Date of Birth",
+        "lastVisit": "Last Visit",
+        "addressInfo": "Address Info",
+        "country": "Country",
+        "province": "Province",
+        "city": "City",
+        "postalCode": "Postal Code",
+        "address": "Address",
+        "editProfile": "Edit Profile",
+        "none": "None"
+    },
+    "MyBooking": {
+        "title": "My Booking",
+        "desc": "Displays a user’s reservation history with options to view details, modify, or cancel bookings.",
+        "upcoming": "Upcoming",
+        "history": "History",
+        "emptyBookingTitle": "No Booking Found",
+        "emptyBookingDesc": "You haven’t made any booking.",
+        "emptyBookingAction": "Make a New Booking"
+    },
+    "BookingDetail": {
+        "title": "Payment Details",
+        "desc": "Booking has been created. Please pay before",
+        "waitingForPayment": "Waiting for payment",
+        "checkin": "Check-in",
+        "checkout": "Check-out",
+        "bookingDate": "Booking Date:",
+        "preference": "Preference",
+        "airportPickupDetails": "Airport Pick-up Details",
+        "airportPickupDetailsContent": "CGK - QZ 501 - 11.31 PM",
+        "isThisYourFirstTime": "Is this your first time to stay with us?",
+        "isThisYourFirstTimeDesc": "This is our first visit to Padma Resort",
+        "cancellationAndModification": "Cancellation & Modification",
+        "cancellationPolicy": "This reservation is free cancellation until 20 Feb 2023 18:00 (Local Time). Cancellations after that, will forfeit Deposits Room & Point.",
+        "cancellationPolicy2": "This reservation can be modified until 20 Feb 2023 18:00 (Local Time).",
+        "cancellationPolicy3": "Once your payment is confirmed, we will send yor receipt to your email address.",
+        "reschedule": "Reschedule",
+        "cancelReservation": "Cancel reservation",
+        "paymentDetails": "Payment Details",
+        "paymentMethod": "Payment Method",
+        "totalPayment": "Total Payment",
+        "purchaseSuccessful": "Purchase Successful",
+        "pleaseCheckinOn": "Please check-in on",
+        "exploreHotelAndResort": "Explore Hotel & Resort",
+        "cancellationReason": "Cancellation Reason",
+        "cancellationReasonDesc": "Please input cancellation reason for confirmation.",
+        "cancellationReasonPlaceholder": "Input cancellation reason",
+        "confirm": "Confirm",
+        "cancellationDate": "Cancellation date",
+        "cancellationFee": "Cancellation fee",
+        "paymentFailed": "Payment Failed",
+        "paymentExpired": "Payment Expired",
+        "paymentExpiredDesc": "Payment cannot be processed. The payment deadline has expired",
+        "backToMyBooking": "Back to My Booking",
+        "guestInformation": "Guest Information",
+        "bookingID": "Booking ID",
+        "accountNumber": "Account Number",
+        "totalToPay": "Total to Pay",
+        "seeBookingDetails": "See Booking Details",
+        "reservationSummary": "Reservation Summary",
+        "guestPerRoom": "Guest per room",
+        "adults": "adults",
+        "children": "children",
+        "infant": "infant",
+        "priceByDate": "Price by date",
+        "inclusion": "Inclusion",
+        "inclusionContent": "Breakfast, Club Benefits, complimentary Wi-Fi access throughout the resort, return airport transfers for min. 2 nights (please provide flight details to the hotel no later than 72-Hours prior to arrival or pick-up service will not be provided), 10% Discount for any Theme Dinner (except Christmas and New Year's Eve Dinner) and all applicable taxes..",
+        "guestDetails": "Guest Details",
+        "room": "Room",
+        "specialRequest": "Special Request",
+        "specialRequestContent": "Non-smoking room and connecting rooms",
+        "priceDetails": "Price Details",
+        "totalPrice": "Total Price",
+        "paidAmount": "Paid Amount",
+        "paidAmountDesc": "Payment will be completed upon check in",
+        "hotelResortNotFound": "Hotel/Resort Not Found",
+        "hotelResortNotFoundDesc": "Sorry, rooms you want is not available for the date. You can choose other or stay with current date.",
+        "backToReschedule": "Back to Reschedule",
+        "close": "Close",
+        "howToPay": "How To Pay",
+        "orderSummary": "Order Summary",
+        "switchPayment": "Switch Payment",
+        "continue": "Continue",
+        "success": "Success",
+        "payNow": "Pay Now"
+    },
+    "PointHistory": {
+        "title": "Point History",
+        "earning": "Earning",
+        "redemption": "Redemption"
+    },
+    "IndexPage": {
+        "description": "هذا مثال أساسي يوضح استخدام <code>next-intl</code> مع Next.js App Router. جرب تغيير اللغة في الزاوية العلوية اليمنى وانظر كيف يتغير المحتوى.",
+        "title": "مثال next-intl"
+    },
+    "LocaleLayout": {
+        "title": "مثال next-intl"
+    },
+    "LocaleSwitcher": {
+        "label": "تغيير اللغة",
+        "locale": "{locale, select, ar {🇸🇦 العربية} de {🇩🇪 الألمانية} en {🇺🇸 الإنجليزية} id {🇮🇩 الإندونيسية} ja {🇯🇵 اليابانية} ko {🇰🇷 الكورية} zh {🇨🇳 الصينية} other {غير معروف}}"
+    },
+    "Manifest": {
+        "name": "مثال next-intl"
+    },
+    "Navigation": {
+        "home": "الرئيسية",
+        "pathnames": "المسارات"
+    },
+    "NotFoundPage": {
+        "description": "يرجى التحقق من شريط عنوان المتصفح أو استخدام التنقل للذهاب إلى صفحة معروفة.",
+        "title": "الصفحة غير موجودة"
+    },
+    "PageLayout": {
+        "links": {
+            "voucher": "قسيمة",
+            "bookingCode": "رمز الحجز",
+            "login": "تسجيل الدخول",
+            "signUp": "إنشاء حساب",
+            "about": "عن",
+            "aboutDesc": "اكتشف المزيد عن فنادقنا وخدماتنا.",
+            "myBooking": "حجوزاتي",
+            "myBookingDesc": "تتبع حجوزاتك وإدارة إقامتك.",
+            "privacyNotice": "إشعار الخصوصية",
+            "privacyNoticeDesc": "معلومات حول ممارسات خصوصية البيانات وحمايتها.",
+            "source": {
+                "description": "تصفح شفرة المصدر لهذا المثال على GitHub.",
+                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+                "title": "شفرة المصدر"
+            },
+            "rooms": "Rooms",
+            "roomsDesc": "Explore rooms at Padma Hotels"
+        }
+    },
+    "PathnamesPage": {
+        "description": "<p>المسارات معربة أيضًا.</p><p>إذا كنت تستخدم اللغة الإنجليزية الافتراضية، فسترى <code>/en/pathnames</code> في شريط عنوان المتصفح في هذه الصفحة.</p><p>إذا غيرت اللغة إلى الألمانية، فسيتم ترجمة عنوان URL وفقًا لذلك (<code>/de/pfadnamen</code>).</p>",
+        "title": "المسارات"
+    }
+}
